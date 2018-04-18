@@ -2211,30 +2211,11 @@ var ViewQuestionComponent = (function () {
     };
     ViewQuestionComponent.prototype.updateViews = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var deployedDappOverflow, transaction, e_1;
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (!this.DappOverflow) {
-                            return [2 /*return*/];
-                        }
-                        if (!(this.question != undefined && !this.checkUser(this.question))) return [3 /*break*/, 5];
-                        _a.label = 1;
-                    case 1:
-                        _a.trys.push([1, 4, , 5]);
-                        return [4 /*yield*/, this.DappOverflow.deployed()];
-                    case 2:
-                        deployedDappOverflow = _a.sent();
-                        return [4 /*yield*/, deployedDappOverflow.updateViews(this.id, { from: this.account })];
-                    case 3:
-                        transaction = _a.sent();
-                        return [3 /*break*/, 5];
-                    case 4:
-                        e_1 = _a.sent();
-                        console.log(e_1);
-                        return [3 /*break*/, 5];
-                    case 5: return [2 /*return*/];
+                if (!this.DappOverflow) {
+                    return [2 /*return*/];
                 }
+                return [2 /*return*/];
             });
         });
     };
@@ -2246,7 +2227,7 @@ var ViewQuestionComponent = (function () {
     };
     ViewQuestionComponent.prototype.voteQuestion = function (id, type) {
         return __awaiter(this, void 0, void 0, function () {
-            var deployedDappOverflow, transaction, e_2;
+            var deployedDappOverflow, transaction, e_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -2264,8 +2245,8 @@ var ViewQuestionComponent = (function () {
                         transaction = _a.sent();
                         return [3 /*break*/, 5];
                     case 4:
-                        e_2 = _a.sent();
-                        console.log(e_2);
+                        e_1 = _a.sent();
+                        console.log(e_1);
                         return [3 /*break*/, 5];
                     case 5: return [2 /*return*/];
                 }
@@ -2274,7 +2255,7 @@ var ViewQuestionComponent = (function () {
     };
     ViewQuestionComponent.prototype.voteAnswer = function (id, type) {
         return __awaiter(this, void 0, void 0, function () {
-            var deployedDappOverflow, transaction, e_3;
+            var deployedDappOverflow, transaction, e_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -2292,8 +2273,8 @@ var ViewQuestionComponent = (function () {
                         transaction = _a.sent();
                         return [3 /*break*/, 5];
                     case 4:
-                        e_3 = _a.sent();
-                        console.log(e_3);
+                        e_2 = _a.sent();
+                        console.log(e_2);
                         return [3 /*break*/, 5];
                     case 5: return [2 /*return*/];
                 }
@@ -2330,7 +2311,7 @@ var ViewQuestionComponent = (function () {
     };
     ViewQuestionComponent.prototype.addAnswer = function (newAnswer) {
         return __awaiter(this, void 0, void 0, function () {
-            var questionId, answer, deployedDappOverflow, transaction, e_4;
+            var questionId, answer, deployedDappOverflow, transaction, e_3;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -2355,8 +2336,8 @@ var ViewQuestionComponent = (function () {
                         console.log("transaction", transaction);
                         return [3 /*break*/, 5];
                     case 4:
-                        e_4 = _a.sent();
-                        console.log(e_4);
+                        e_3 = _a.sent();
+                        console.log(e_3);
                         return [3 /*break*/, 5];
                     case 5: return [2 /*return*/];
                 }
